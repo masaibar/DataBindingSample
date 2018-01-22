@@ -32,5 +32,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="What's your name"/>
+
+        <Button
+            android:id="@+id/button_user_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open user list"/>
     </LinearLayout>
 </layout>
