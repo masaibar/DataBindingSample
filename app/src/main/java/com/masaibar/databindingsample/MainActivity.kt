@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         binding.user = User("Makoto", "Saibara")
 
         setupShowNameButton()
+        setupOpenUserListButton()
     }
 
     private fun setupShowNameButton() {
@@ -26,6 +27,12 @@ class MainActivity : AppCompatActivity() {
                     this,
                     "My name is ${binding.user?.firstName}, ${binding.user?.lastName}.",
                     Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun setupOpenUserListButton() {
+        binding.buttonUserList.setOnClickListener {
+            UserListActivity.start(this)
         }
     }
 }
